@@ -280,35 +280,164 @@ img{display:block;max-width:100%}
   .ft-top{grid-template-columns:1fr 1fr}
   .aud-grid{grid-template-columns:1fr 1fr}
 }
+
 @media(max-width:768px){
+  /* NAV */
   .n-links,.n-cta{display:none}
   .burger{display:block}
-  .ribbon{margin-top:-40px}
-  .ribbon-inner{grid-template-columns:1fr}
-  .rib-item{border-right:none;border-bottom:1px solid rgba(0,0,0,.05)}
-  .about{padding:80px 24px}
-  .about-imgs{grid-template-columns:1fr;height:auto}
-  .about-imgs .tall{grid-row:span 1}
-  .about-imgs img{height:220px}
-  .sec{padding:72px 24px}
-  .pstrip{grid-template-columns:1fr;gap:12px;padding:0 24px;margin-bottom:60px}
-  .ps-item img{height:220px}
-  .stats-inner{grid-template-columns:1fr 1fr;gap:20px}
-  .stats{padding:60px 24px}
-  .lake-feats{grid-template-columns:1fr}
-  .farm-grid{grid-template-columns:1fr}
-  .hero-btns{flex-direction:column;max-width:320px;width:100%}
-  .btn-main,.btn-wh{text-align:center}
-  .ft-top{grid-template-columns:1fr;gap:28px}
-  .ft-bottom{flex-direction:column;gap:6px;text-align:center}
-  .expfull{height:55vh}
-  .aud-grid{grid-template-columns:1fr}
-  .audience{padding:72px 24px}
-  .loc-sec{padding:72px 24px}
-  .loc-pills{flex-direction:column;align-items:center}
-  .wave-top::before,.wave-bottom::after{height:24px;top:-24px}
-  .wave-bottom::after{bottom:-24px}
+  .nav{padding:14px 16px}
+  .nav.s{padding:10px 16px}
+  .n-logo{font-size:1.2rem;letter-spacing:4px}
+
+  /* MOBILE NAV */
+  .mob-nav a{font-size:1.3rem;letter-spacing:2px}
+  .mob-close{top:16px;right:16px;font-size:2.2rem}
+
+  /* HERO */
+  .hero{min-height:100vh;min-height:100svh}
+  .hero-c{padding:0 20px}
+  .hero-c h1{font-size:clamp(1.8rem,7vw,2.6rem);margin-bottom:18px}
+  .hero-c h1 span{white-space:normal!important}
+  .hero-sub{font-size:.95rem;line-height:1.65;margin-bottom:28px;max-width:100%}
+  .hero-badge{font-size:.68rem;letter-spacing:2px;padding:8px 18px;margin-bottom:20px}
+  .hero-btns{flex-direction:column;align-items:center;gap:10px;width:100%;max-width:300px;margin:0 auto}
+  .btn-main,.btn-wh{text-align:center;width:100%;padding:14px 28px;font-size:.78rem}
+  .hero-scroll{bottom:20px;font-size:.6rem}
+
+  /* RIBBON */
+  .ribbon{margin-top:-32px;padding:0 16px}
+  .ribbon-inner{grid-template-columns:1fr 1fr;gap:8px}
+  .rib-item{padding:18px 14px;border-radius:12px}
+  .rib-icon{width:40px;height:40px;font-size:1.1rem;margin-bottom:10px}
+  .rib-item h4{font-size:.88rem;margin-bottom:3px}
+  .rib-item p{font-size:.72rem;line-height:1.4}
+
+  /* ABOUT */
+  .about{padding:64px 16px;gap:32px}
+  .about-text h2{font-size:1.6rem;margin-bottom:16px}
+  .about-text p{font-size:.92rem;line-height:1.7;margin-bottom:12px}
+  .about-text .sig{font-size:.9rem;margin-top:16px}
+  .about-imgs{grid-template-columns:1fr;height:auto;gap:6px}
+  .about-imgs .tall{grid-row:span 1;height:200px}
+  .about-imgs img{height:160px}
+
+  /* AUDIENCE */
+  .audience{padding:56px 16px}
+  .audience .sh{margin-bottom:32px!important}
+  .audience .sh h2{font-size:1.5rem}
+  .audience .sh p{font-size:.88rem}
+  .aud-grid{grid-template-columns:1fr;gap:16px}
+  .aud-card-img{height:200px}
+  .aud-card-body{padding:20px 18px 18px}
+  .aud-card-body h4{font-size:1.1rem;margin-bottom:6px}
+  .aud-card-body p{font-size:.84rem;line-height:1.55}
+  .aud-tag{font-size:.64rem!important;padding:3px 10px!important}
+
+  /* PHOTO STRIP */
+  .pstrip{grid-template-columns:1fr 1fr;gap:6px;padding:0 16px;margin-bottom:48px}
+  .ps-item img{height:150px}
+  .ps-label{opacity:1;transform:none;padding:10px 12px}
+  .ps-label span{font-size:.72rem}
+
+  /* SECTIONS */
+  .sec{padding:56px 16px}
+  .sh{margin-bottom:36px}
+  .sh h2{font-size:1.5rem;margin-bottom:10px}
+  .sh p{font-size:.88rem;line-height:1.65}
+
+  /* BANYA */
+  .b-grid{grid-template-columns:1fr;gap:16px}
+  .b-card-img img{height:220px}
+  .b-card-tag{font-size:.6rem;padding:5px 12px}
+  .b-body{padding:22px 18px}
+  .b-body::before{left:18px;right:18px}
+  .b-body h3{font-size:1.25rem;margin-bottom:14px}
+  .b-body li{font-size:.84rem;gap:10px}
+  .b-body li svg{width:16px;height:16px}
+
+  /* STATS */
+  .stats{padding:48px 16px}
+  .stats-inner{grid-template-columns:repeat(3,1fr);gap:12px}
+  .st{padding:14px 8px}
+  .st-num{font-size:2.2rem;margin-bottom:4px}
+  .st-txt{font-size:.62rem;letter-spacing:1.2px}
+
+  /* LAKE */
+  .lake-grid{grid-template-columns:1fr;gap:24px}
+  .lake-mosaic{gap:6px}
+  .lake-mosaic img:first-child{height:200px}
+  .lake-mosaic img:not(:first-child){height:140px}
+  .lake-info h3{font-size:1.3rem;margin-bottom:10px}
+  .lake-info>p{font-size:.9rem;margin-bottom:20px}
+  .lake-feats{grid-template-columns:1fr;gap:10px}
+  .lf{padding:18px 16px}
+  .lf h4{font-size:.95rem;margin-bottom:3px}
+  .lf p{font-size:.78rem}
+
+  /* EXPERIENCE */
+  .expfull{height:50vh;min-height:360px}
+  .expfull-c{padding:0 20px}
+  .expfull-c h2{font-size:clamp(1.5rem,5.5vw,2.2rem);margin-bottom:14px}
+  .expfull-c p{font-size:.88rem;line-height:1.65;margin-bottom:24px}
+
+  /* LOCATION */
+  .loc-sec{padding:56px 16px}
+  .loc-sec h2{font-size:1.5rem;margin-bottom:12px}
+  .loc-sec .loc-sub{font-size:.88rem;margin-bottom:24px}
+  .loc-pills{flex-direction:column;align-items:center;gap:10px;margin-bottom:28px}
+  .loc-pill{padding:10px 20px;font-size:.82rem}
+
+  /* CTA */
+  .cta{padding:80px 16px}
+  .cta-c h2{font-size:clamp(1.5rem,5.5vw,2.2rem);margin-bottom:12px}
+  .cta-c p{font-size:.88rem;line-height:1.65;margin-bottom:24px}
+  .cta-btns{flex-direction:column;align-items:center;gap:10px;width:100%}
+  .btn-main-lg{padding:14px 36px;font-size:.78rem;width:100%;max-width:300px;text-align:center;display:block}
+  .cta-btns .btn-wh{width:100%;max-width:300px;text-align:center;display:block;padding:14px 36px}
+
+  /* FOOTER */
+  .ft{padding:48px 16px 24px}
+  .ft-top{grid-template-columns:1fr;gap:28px;margin-bottom:32px}
+  .ft-brand{font-size:1.3rem;letter-spacing:6px}
+  .ft-desc{font-size:.82rem;max-width:100%}
+  .ft h4{font-size:.88rem;margin-bottom:12px}
+  .ft a{font-size:.8rem}
+  .ft-contact a{font-size:.88rem;margin-bottom:10px}
+  .ft-bottom{flex-direction:column;gap:4px;text-align:center;padding-top:20px;font-size:.68rem}
+
+  /* WA FLOAT */
+  .wa{bottom:20px;right:16px;width:50px;height:50px}
+  .wa svg{width:22px;height:22px}
+
+  /* WAVES */
+  .wave-top::before{height:20px;top:-20px}
+  .wave-bottom::after{height:20px;bottom:-20px}
+
+  /* GOLD DIVIDER */
+  .gold-divider{margin:0 16px;width:calc(100% - 32px)}
+
+  /* ORNAMENTS */
   .ornament::before,.ornament::after{display:none}
+}
+
+/* ====== SMALL PHONES (< 380px) ====== */
+@media(max-width:380px){
+  .hero-c h1{font-size:1.6rem}
+  .hero-sub{font-size:.88rem}
+  .ribbon-inner{grid-template-columns:1fr;gap:8px}
+  .rib-item{display:flex;align-items:center;gap:14px;text-align:left;padding:14px 16px}
+  .rib-icon{margin:0;flex-shrink:0}
+  .rib-item h4{font-size:.85rem}
+  .rib-item p{font-size:.7rem}
+  .stats-inner{grid-template-columns:repeat(2,1fr)}
+  .st:last-child{grid-column:span 2}
+  .pstrip{grid-template-columns:1fr;gap:8px}
+  .ps-item img{height:180px}
+  .about-text h2{font-size:1.4rem}
+  .aud-card-img{height:170px}
+  .b-card-img img{height:180px}
+  .lake-mosaic img:first-child{height:170px}
+  .lake-mosaic img:not(:first-child){height:120px}
 }
 </style>
 </head>
